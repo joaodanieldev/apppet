@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/app.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/pet.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <h3>Chegada ordem para banho </h3> 
+
+    <form action="" onsubmit="app.addPet()">
+        <p>
+            <label for="">Animal</label>
+            <select name="animal">
+                <option value="cachorro">Cachorro</option>
+                <option value="gato">Gato</option>
+            </select>
+        </p>
+
+        <p>
+            <label for="">Nome</label>
+            <input type="text" name="name">
+        </p>
+
+        <p>
+            <label for="">Sexo</label>
+            <select name="sex" id="">
+                <option value="macho">Macho</option>
+                <option value="Femea">Femea</option>
+            </select>
+        </p>
+        <p>
+            <label for="">Peso(kg)</label>
+            <input type="number" name="kg" step="any" min="0">
+        </p> 
+
+        <button type="submit">Salvar</button>
+        <button type="reset" >Limpar</button>
+    </form>
+    <br>
+    <table>
+        <h3>Animais cadastrado para banho</h3>
+        <ul id="pets"></ul>
+    </table>
+   
+</body>
+</html>
